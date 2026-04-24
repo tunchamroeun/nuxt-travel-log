@@ -20,7 +20,6 @@
   "devDependencies": {
     "@antfu/eslint-config": "^8.2.0",
     "eslint": "^10.2.1",
-    "eslint-plugin-format": "^2.0.1",
-    "typescript": "^6.0.3"
+    "eslint-plugin-format": "^2.0.1"
   }
 }
