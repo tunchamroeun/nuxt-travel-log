@@ -1,6 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import tailwindcss from '@tailwindcss/vite';
+
 export default defineNuxtConfig({
-  modules: ['@nuxt/eslint'],
+  modules: ['@nuxt/eslint', '@nuxt/icon'],
   devtools: { enabled: true },
   compatibilityDate: '2025-07-15',
   eslint: {
@@ -8,4 +10,10 @@ export default defineNuxtConfig({
       standalone: false,
     },
   },
+  vite: {
+    plugins: [
+      tailwindcss(),
+    ],
+  },
+  css: ['~/assets/css/main.css'],
 });
